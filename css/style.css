@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Rubik', sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.header{
+    height: 530px;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-content{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 40px;
+}
+
+nav ul li{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header h4{
+    margin: 15px 0;
+    color: #00ed82;
+}
+
+img{
+    width: 100%;
+}
+
+.logo{
+    width: 300px;
+    margin: 15px 0;
+}
+
+.header-text-one{
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.header-text-two{
+    margin: 10px 0;
+}
+
+a{
+    color: #eee;
+}
+
+.header a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cta-btn{
+    margin: 13px 0;
+    border: none;
+    padding: 17px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.legal-text{
+    margin: 13px 0;
+    font-size: 10px;
+    color: #ccc;
+}
+
+.bundles{
+    background: linear-gradient(
+    318.68deg,
+    #0f495c 0%,
+    #0d3640 49.72%,
+    #08141f 100%
+  );
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    padding: 20px;
+}
+
+.bundle-content .bundle-header{
+    text-transform: uppercase;
+    color: #00ed82;
+    font-weight: bold;
+}
+
+.bundle-content .bundle-text{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.bundle-content .bundle-legal{
+    font-size: 13px;
+    color: #ccc;
+}
+
+.bundle-cta{
+    display: flex;
+    flex-direction: column;
+}
+
+.bundle-cta .bundle-cta-btn{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 15px;
+    background: none;
+    color: #fff;
+}
+
+.bundle-cta a{
+    margin: 5px 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.featured{
+    margin: 50px 0;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.featured h4{
+    color: #00ed82;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.featured .featured-header{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.featured .featured-text{
+    margin: 10px 0;
+}
+
+.featured-movies{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.movie-card{
+    width: 300px;
+    height: 500px;
+    text-align: left;
+    padding: 20px;
+}
+
+.cat{
+    font-size: 24px;
+}
+
+.movie-card-1{
+    background-image: url("../img/cover-1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.movie-card-2{
+    background-image: url("../img/cover-2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.movie-card-3{
+    background-image: url("../img/cover-3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.movie-card-4{
+    background-image: url("../img/cover-4.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.live-hulu{
+    text-align: center;
+    margin: 25px;
+    padding: 100px;
+    border: 3px solid #00ed82;
+    border-radius: 10px;
+}
+
+.live-hulu h4{
+    color: #00ed82;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.livetv{
+    margin: 13px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.livetv-text{
+    margin: 10px 0;
+    line-height: 40px;
+    font-size: 23px;
+}
+
+.livetv-legal{
+    margin: 13px 0;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.live-hulu a{
+    margin: 13px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media(max-width: 1268px){
+    .featured-movies{
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-gap: 50px;
+    }
+}
+
+@media(max-width: 750px){
+    .header-content{
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .bundles{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        text-align: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .featured{
+        padding: 10px 50px;
+    }
+
+    .featured-movies{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 1px;
+        justify-content: center;
+    }
+
+    .live-hulu{
+        padding: 30px;
+    }
+}
